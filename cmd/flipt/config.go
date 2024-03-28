@@ -95,7 +95,7 @@ func (c *editCommand) run(cmd *cobra.Command, args []string) error {
 
 	b, err := os.ReadFile(file)
 	if err != nil {
-		return fmt.Errorf("reading config file: %w", err)
+		return fmt.Errorf("testing only - reading config file: %w", err)
 	}
 
 	content := string(b)
